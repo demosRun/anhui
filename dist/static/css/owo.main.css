@@ -416,12 +416,20 @@ ul[template="a5Jkh9zomp95ftbW"] {
 .swiper-container[template="paperList"] {
   width: 1030px;
   margin: 0 -15px;
+  overflow: hidden;
+  height: 166px;
 }
 
-[template="paperList"] .swiper-container,
 [template="paperList"] ul {
   overflow: hidden;
   height: 166px;
+  margin: 0;
+  padding: 0;
+}
+
+[template="paperList"] img {
+  display: block;
+  margin: 0 auto;
 }
 
 [template="paperList"] li {
@@ -429,6 +437,9 @@ ul[template="a5Jkh9zomp95ftbW"] {
   height: 166px;
   text-align: center;
   font-size: 16px;
+  line-height: 30px;
+  margin: 0;
+  padding: 0;
 }
 [template="home"] .w1000 {
   width: 1000px;

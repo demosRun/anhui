@@ -53,15 +53,26 @@
   .swiper-container {
     width: 1030px;
     margin: 0 -15px;
-  }
-  .swiper-container, ul {
     overflow: hidden;
     height: 166px;
+  }
+  ul {
+    overflow: hidden;
+    height: 166px;
+    margin: 0;
+    padding: 0;
+  }
+  img {
+    display: block;
+    margin: 0 auto;
   }
   li {
     display: inline-block;
     height: 166px;
     text-align: center;
     font-size: 16px;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
   }
 </style>
