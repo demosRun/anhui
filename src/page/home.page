@@ -1,0 +1,60 @@
+<template>
+<div class="home">
+  <temple name="topBar" logo="http://www.people.com.cn/img/2016people/images/rmw_logo.png"  src="https://owo.ink/public/e3a0701f4f59af3eccba5847107518a8.page"></temple>
+  <div class="nav-box">
+    <temple name="nav"  src="https://owo.ink/public/56cbd2f59fc117cd818af15e9b4e879c.page"></temple>
+  </div>
+  <div class="content">
+    <!-- 主标题 -->
+    <temple name="mainText"  src="./src/module/mainText.owo"></temple>
+    <div class="top-news-box clear">
+      <div class="left fl">
+        <temple name="44V6SpMv"  src="https://owo.ink/public/fe3afe4a52465b395bc7c9b9234e0611.page"></temple>
+        <!-- 新闻列表 -->
+        <div class="news-box">
+          <div class="news-card">
+            <h2 class="title" font="FZDBSJT">国资动态</h2>
+            <temple name="imageCard" src="./src/module/imageCard.owo"></temple>
+            <temple name="a5Jkh9zomp95ftbW"  src="https://owo.ink/public/9d65b02ceaf5c7938c4c0a5531777e93.page"></temple>
+          </div>
+        </div>
+      </div>
+      <div class="right fl">
+        <temple name="6PJczu" src="https://owo.ink/public/e5706a2084f544bbfa09ab064cd824dc.page"></temple>
+        <temple name="6PJczu" src="https://owo.ink/public/e5706a2084f544bbfa09ab064cd824dc.page"></temple>
+        <temple name="6PJczu" src="https://owo.ink/public/e5706a2084f544bbfa09ab064cd824dc.page"></temple>
+        <temple name="show"  src="https://owo.ink/public/b4bfd67bdf21b5e539c94a4d2abc3a17.page"></temple>
+      </div>
+    </div>
+  </div>
+</div>
+</template>
+
+
+<style lang="less">
+.w1000 {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.top-news-box {
+  .left {
+    width: 680px;
+  }
+  
+  .right {
+    width: 320px;
+  }
+}
+.news-card {
+  .title {
+    font-size: 26px;
+    line-height: 50px;
+    color: #cc0000;
+  }
+}
+.news-card {
+  width: 310px;
+  padding-right: 20px;
+}
+</style>

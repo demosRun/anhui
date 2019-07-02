@@ -1,0 +1,97 @@
+/* 这个文件里写的是全局样式,在各个页面都生效 */
+body, html {
+  margin: 0;
+  padding: 0;
+  user-select: text;
+  font: normal 12px/180% "SimSun";
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+  overflow-x: hidden;
+  min-height: 100%;
+}
+body {
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center top;
+  min-width: 1200px;
+  background-image: url('../resource/bg.jpg');
+}
+h1, h2, h3, h4, h5, input {
+  margin: 0;
+  padding: 0;
+}
+.fl {
+  float: left;
+}
+ul, li {
+  list-style-type: none;
+}
+
+a {
+  color: unset;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, button, input, textarea, th, td{
+  margin:0;
+  padding:0;
+}
+
+.clear:after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+
+/* 网页常用样式 */
+
+nav[template="nav"] {
+  font-size: 16px;
+  background-color: #ce262a;
+}
+
+.nav-box {
+  margin: 0 auto;
+  font-weight: bold;
+  margin-top: 22%;
+  background-color: #ce262a;
+}
+
+
+.content {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.swiper-container-p2[template="44V6SpMv"] {
+  margin: 0;
+}
+
+.right-item[template="6PJczu"] {
+  border-bottom: 2px solid #ccc;
+}
+
+.right-item:nth-last-child(2) {
+  border: none;
+}
+
+.right-item[template="6PJczu"] {
+  height: 103px;
+}
+
+.show[template="ad"] {
+  border: 1px solid #ccc;
+}
+
+.swiper-container-p2[template="44V6SpMv"] {
+  margin-bottom: 40px;
+}

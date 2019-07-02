@@ -1,0 +1,30 @@
+<template>
+  <div class="show">
+    <a target="_blank" href="#">
+      <img src="http://world.people.com.cn/NMediaFile/2019/0520/MAIN201905201936552622484187671.png"/>
+    </a>
+  </div>
+</template>
+
+<style>
+.show {
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  cursor: pointer;
+  overflow: hidden;
+  display: block;
+}
+a, img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+</style>

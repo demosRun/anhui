@@ -1,0 +1,355 @@
+body, html, .ox {
+  padding: 0;
+  margin: 0;
+}
+
+.owo-animation {
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+}
+
+/* 清除浮动 */
+.clear:after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+  zoom: 1;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.title-bar[template="topBar"] {
+  height: 40px;
+  background-color: #ffffff;
+}
+
+[template="topBar"] .content {
+  width: 1000px;
+  height: 40px;
+  margin: auto;
+}
+
+[template="topBar"] img {
+  margin: 5px 10px;
+  height: 30px;
+}
+
+[template="topBar"] a {
+  float: left;
+  display: block;
+}
+
+[template="topBar"] .link {
+  color: rgba(102, 102, 102, 1.00);
+  font-size: 14px;
+  margin: 0 10px;
+  line-height: 40px;
+}
+
+[template="topBar"] a {
+  color: #333;
+  text-decoration: none;
+}
+nav[template="nav"] {
+  width: 1000px;
+  font-size: 18px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 auto;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #ce262a;
+}
+
+nav[template="nav"] a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav[template="nav"] a:hover {
+  color: white;
+  -webkit-text-decoration: #ffffff;
+          text-decoration: #ffffff;
+}
+
+[template="nav"] a {
+  color: white;
+  display: inline;
+  margin: 10px;
+  line-height: 30px;
+  text-align: center;
+}
+h1[template="mainText"] {
+  font-size: 38px;
+  text-align: center;
+  line-height: 80px;
+  font-family: "Microsoft YaHei";
+}
+
+[template="mainText"] a:hover {
+  color: #c00;
+  text-decoration: underline;
+}
+.swiper-container-p2[template="44V6SpMv"] {
+  position: relative;
+  width: 650px;
+  height: 410px;
+  margin: 0 auto;
+  overflow: hidden;
+  color: white;
+}
+
+[template="44V6SpMv"] .swiper-slide {
+  width: 650px;
+  height: 410px;
+  position: relative;
+}
+
+[template="44V6SpMv"] .swiper-slide span {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 64px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  line-height: 64px;
+  font-size: 16px;
+}
+
+[template="44V6SpMv"] .prev {
+  background: url(http://www.people.com.cn/img/2016people/images/focus_left_b.png);
+  width: 18px;
+  height: 25px;
+  position: absolute;
+  cursor: pointer;
+  bottom: 18px;
+  left: 70px;
+  z-index: 10;
+}
+
+[template="44V6SpMv"] .next {
+  background: url(http://www.people.com.cn/img/2016people/images/focus_right_b.png);
+  width: 18px;
+  height: 25px;
+  position: absolute;
+  cursor: pointer;
+  bottom: 18px;
+  right: 70px;
+  z-index: 10;
+}
+
+[template="44V6SpMv"] .swiper-pagination1 {
+  display: none;
+}
+
+[template="44V6SpMv"] .num1 i {
+  color: #fff;
+  display: block;
+  font-size: 18px;
+  position: absolute;
+  left: 15%;
+  bottom: 7px;
+  line-height: 200%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+}
+
+[template="44V6SpMv"] .num1 i em {
+  color: #fff;
+  margin-left: 2px;
+}
+
+[template="44V6SpMv"] .num1 i em.thisp {
+  font-size: 28px;
+  color: #e71f18;
+  margin-right: 1px;
+  margin-left: 0;
+}
+          [font=FZDBSJT] {
+            font-family: 'FZDBSJT';
+          }
+          @font-face {
+            font-family: 'FZDBSJT';
+            src: url('../font/FZDBSJT.eot');
+            src: url('../font/FZDBSJT.eot?#iefix') format('embedded-opentype'),
+              url('../font/FZDBSJT.woff') format('woff'),
+              url('../font/FZDBSJT.ttf')  format('truetype'),
+              url('../font/FZDBSJT.svg#MicrosoftYaHei') format('svg');
+          }
+        
+[template="imageCard"] .image-box {
+  width: 310px;
+  height: 150px;
+  position: relative;
+}
+
+[template="imageCard"] .image-box a,
+[template="imageCard"] .image-box img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+[template="imageCard"] .image-box p {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  display: block;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  height: 35px;
+  line-height: 35px;
+  font-size: 14px;
+}
+ul[template="a5Jkh9zomp95ftbW"] {
+  padding: 0;
+  margin: 0;
+}
+
+[template="a5Jkh9zomp95ftbW"] li {
+  color: #595757;
+  line-height: 30px;
+  font-size: 16px;
+  position: relative;
+  cursor: pointer;
+}
+
+[template="a5Jkh9zomp95ftbW"] li a {
+  color: black;
+  text-decoration: none;
+}
+
+[template="a5Jkh9zomp95ftbW"] li a:hover {
+  color: #c00;
+  text-decoration: underline;
+}
+
+[template="a5Jkh9zomp95ftbW"] li .time {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  font-size: 13px;
+  clear: both;
+}
+
+[template="a5Jkh9zomp95ftbW"] li {
+  overflow: hidden;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: 5px center;
+  padding-left: 15px;
+  background-image: url('http://opinion.people.com.cn/img/MAIN/2014/06/114590/images/dot.gif');
+}
+
+[template="a5Jkh9zomp95ftbW"] a {
+  height: 36px;
+  overflow: hidden;
+  display: block;
+  cursor: pointer;
+}
+
+ul[template="a5Jkh9zomp95ftbW"] {
+  padding: 0;
+  margin: 20px 0;
+}
+.right-item[template="6PJczu"] {
+  width: 320px;
+  height: 110px;
+  border-bottom: 1px dotted #ccc;
+  padding-bottom: 15px;
+  overflow: hidden;
+}
+
+.right-item[template="6PJczu"]:nth-last-child(1) {
+  border: none;
+}
+
+[template="6PJczu"] .title {
+  line-height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+[template="6PJczu"] .title a:hover {
+  color: #ce262a;
+  text-decoration: none;
+}
+
+[template="6PJczu"] .text {
+  font-size: 16px;
+  color: #595757;
+  line-height: 32px;
+  height: 70px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.show {
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  cursor: pointer;
+  overflow: hidden;
+  display: block;
+}
+
+[template="show"] a,
+[template="show"] img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-decoration: none;
+}
+
+[template="show"] a:hover {
+  color: white;
+  text-decoration: none;
+}
+[template="home"] .w1000 {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+[template="home"] .top-news-box .left {
+  width: 680px;
+}
+
+[template="home"] .top-news-box .right {
+  width: 320px;
+}
+
+[template="home"] .news-card .title {
+  font-size: 26px;
+  line-height: 50px;
+  color: #cc0000;
+}
+
+[template="home"] .news-card {
+  width: 310px;
+  padding-right: 20px;
+}
