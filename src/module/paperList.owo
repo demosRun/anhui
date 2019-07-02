@@ -1,0 +1,67 @@
+<template>
+<div class="swiper-container">
+  <ul class="swiper-wrapper">
+    <li class="swiper-slide"><a href="http://www.magang.com.cn/index.xhtml" target="_blank"><img src="http://ah.people.com.cn/NMediaFile/2017/1114/LOCAL201711141516399125299255743.png" width="230" height="140" alt="马钢集团"/></a><a href="http://www.magang.com.cn/index.xhtml" target="_blank">马钢集团</a></li>
+    <li class="swiper-slide"><a href="https://www.ahjkjt.com/" target="_blank"><img src="http://ah.people.com.cn/NMediaFile/2017/1114/LOCAL201711141516404226871113970.jpg" width="230" height="140" alt="省交控集团"/></a><a href="https://www.ahjkjt.com/" target="_blank">省交控集团</a></li><li class="swiper-slide"><a href="http://www.chinaconch.com/" target="_blank"><img src="http://ah.people.com.cn/NMediaFile/2017/1114/LOCAL201711141516411666777578181.png" width="230" height="140" alt="海螺集团"/></a><a href="http://www.chinaconch.com/" target="_blank">海螺集团</a></li>
+    <li class="swiper-slide"><a href="http://www.wenergy.com.cn/web/" target="_blank"><img src="http://ah.people.com.cn/NMediaFile/2017/1114/LOCAL201711141516425210790765753.png" width="230" height="140" alt="省能源集团"/></a><a href="http://www.wenergy.com.cn/web/" target="_blank">省能源集团</a></li>
+    <li class="swiper-slide"><a href="http://www.hbcoal.com/" target="_blank"><img src="http://ah.people.com.cn/NMediaFile/2017/1114/LOCAL201711141516428404005504786.jpg" width="230" height="140" alt="淮北矿业集团"/></a><a href="http://www.hbcoal.com/" target="_blank">淮北矿业集团</a></li>
+    <li class="swiper-slide"><a href="http://www.hnmine.com/" target="_blank"><img src="http://ah.people.com.cn/NMediaFile/2017/1114/LOCAL201711141516431445509423052.jpg" width="230" height="140" alt="淮南矿业集团"/></a><a href="http://www.hnmine.com/" target="_blank">淮南矿业集团</a></li>
+    <li class="swiper-slide"><a href="http://www.ahgykg.com/" target="_blank"><img src="http://ah.people.com.cn/NMediaFile/2017/1122/LOCAL201711221536193931932808050.jpg" width="230" height="140" alt="国元集团"/></a><a href="http://www.ahgykg.com/" target="_blank">国元集团</a></li>
+    <li class="swiper-slide"><a href="http://www.ahinv.com/html/index.html" target="_blank"><img src="http://ah.people.com.cn/NMediaFile/2017/1122/LOCAL201711221540579124128226246.jpg" width="230" height="140" alt="省投资集团"/></a><a href="http://www.ahinv.com/html/index.html" target="_blank">省投资集团</a></li>
+    <li class="swiper-slide"><a href="http://www.tnmg.com.cn/" target="_blank"><img src="http://ah.people.com.cn/NMediaFile/2017/1122/LOCAL201711221553263403528903990.jpg" width="230" height="140" alt="铜陵有色集团"/></a><a href="http://www.tnmg.com.cn/" target="_blank">铜陵有色集团</a></li>
+    <li class="swiper-slide"><a href="http://www.jac.com.cn/" target="_blank"><img src="http://ah.people.com.cn/NMediaFile/2017/1114/LOCAL201711141516435066422256431.jpg" width="230" height="140" alt="江汽集团"/></a><a href="http://www.jac.com.cn/" target="_blank">江汽集团</a></li>
+    <li class="swiper-slide"><a href="http://www.wbmd.cn/" target="_blank"><img src="http://ah.people.com.cn/NMediaFile/2017/1122/LOCAL201711221652468602620275832.jpg" width="230" height="140" alt="皖北煤电集团"/></a><a href="http://www.wbmd.cn/" target="_blank">皖北煤电集团</a></li>
+    <li class="swiper-slide"><a href="http://www.hazq.com/" target="_blank"><img src="http://ah.people.com.cn/NMediaFile/2017/1122/LOCAL201711221659368551687022010.jpg" width="230" height="140" alt="华安证券公司"/></a><a href="http://www.hazq.com/" target="_blank">华安证券公司</a></li>
+    <li class="swiper-slide"><a href="http://www.hsbank.com.cn/Channel/312285" target="_blank"><img src="http://ah.people.com.cn/NMediaFile/2017/1207/LOCAL201712071632016801316402928.jpg" width="230" height="140" alt="徽商银行"/></a><a href="http://www.hsbank.com.cn/Channel/312285" target="_blank">徽商银行</a></li>
+    <li class="swiper-slide"><a href="http://www.heliforklift.com/" target="_blank"><img src="http://ah.people.com.cn/NMediaFile/2017/1122/LOCAL201711221705539849557932190.jpg" width="230" height="140" alt="叉车集团"/></a><a href="http://www.heliforklift.com/" target="_blank">叉车集团</a></li>
+    <li class="swiper-slide"><a href="http://www.ahguaranty.com/group/index.jsp" target="_blank"><img src="http://ah.people.com.cn/NMediaFile/2017/1207/LOCAL201712071634407106355058730.png" width="230" height="140" alt="省信用担保集团"/></a><a href="http://www.ahguaranty.com/group/index.jsp" target="_blank">省信用担保集团</a></li>
+    <li class="swiper-slide"><a href="http://www.hfmty.com/" target="_blank"><img src="http://ah.people.com.cn/NMediaFile/2017/1122/LOCAL201711221701432549865161637.jpg" width="230" height="140" alt="合肥煤炭院"/></a><a href="http://www.hfmty.com/" target="_blank">合肥煤炭院</a></li>
+    <li class="swiper-slide"><a href="http://www.ahyjjh.com.cn/default.asp" target="_blank"><img src="http://ah.people.com.cn/NMediaFile/2017/1114/LOCAL201711141516437747601983833.jpg" width="230" height="140" alt="引江济淮公司"/></a><a href="http://www.ahyjjh.com.cn/default.asp" target="_blank">引江济淮公司</a></li>
+    <li class="swiper-slide"><a href="http://www.amig.cn/web/index.aspx" target="_blank"><img src="http://ah.people.com.cn/NMediaFile/2017/1122/LOCAL201711221711078127602115167.jpg" width="230" height="140" alt="军工集团"/></a><a href="http://www.amig.cn/web/index.aspx" target="_blank">军工集团</a></li>
+    <li class="swiper-slide"><a href="http://www.ahgy.info/" target="_blank"><img src="http://ah.people.com.cn/NMediaFile/2017/1122/LOCAL201711221720012325361185337.jpg" width="230" height="140" alt="国资运营公司"/></a><a href="http://www.ahgy.info/" target="_blank">国资运营公司</a></li>
+    <li class="swiper-slide"><a href="http://www.wwgf.com.cn/index.html" target="_blank"><img src="http://ah.people.com.cn/NMediaFile/2017/1122/LOCAL201711221723401984924955847.jpg" width="230" height="140" alt="皖维集团"/></a><a href="http://www.wwgf.com.cn/index.html" target="_blank">皖维集团</a></li>
+    <li class="swiper-slide"><img src="http://ah.people.com.cn/NMediaFile/2017/1122/LOCAL201711221727031909924413465.jpg" width="230" height="140" alt="皖中集团"/>皖中集团</li>
+    <li class="swiper-slide"><a href="http://www.aceg.com.cn/" target="_blank"><img src="http://ah.people.com.cn/NMediaFile/2017/1122/LOCAL201711221730321207049241124.jpg" width="230" height="140" alt="建工集团"/></a><a href="http://www.aceg.com.cn/" target="_blank">建工集团</a></li>
+    <li class="swiper-slide"><a href="http://www.anhuiairport.com/" target="_blank"><img src="http://ah.people.com.cn/NMediaFile/2017/1122/LOCAL201711221733326158598959224.jpg" width="230" height="140" alt="机场集团"/></a><a href="http://www.anhuiairport.com/" target="_blank">机场集团</a></li>
+    <li class="swiper-slide"><a href="http://www.ccmcgc.com/" target="_blank"><img src="http://ah.people.com.cn/NMediaFile/2017/1122/LOCAL201711221739084428024714818.jpg" width="230" height="140" alt="中煤矿建集团"/></a><a href="http://www.ccmcgc.com/" target="_blank">中煤矿建集团</a></li>
+    <li class="swiper-slide"><a href="http://www.ahnk.com.cn/" target="_blank"><img src="http://ah.people.com.cn/NMediaFile/2017/1122/LOCAL201711221744124550802948184.jpg" width="230" height="140" alt="省农垦集团"/></a><a href="http://www.ahnk.com.cn/" target="_blank">省农垦集团</a></li>
+    <li class="swiper-slide"><a href="http://www.huishang.com.cn/" target="_blank"><img src="http://ah.people.com.cn/NMediaFile/2017/1122/LOCAL201711221746085448709402927.jpg" width="230" height="140" alt="省徽商集团"/></a><a href="http://www.huishang.com.cn/" target="_blank">省徽商集团</a></li>
+    <li class="swiper-slide"><a href="http://www.ahsalt.com/welcome/" target="_blank"><img src="http://ah.people.com.cn/NMediaFile/2017/1122/LOCAL201711221748343576362330646.jpg" width="230" height="140" alt="省盐业总公司"/></a><a href="http://www.ahsalt.com/welcome/" target="_blank">省盐业总公司</a></li>
+    <li class="swiper-slide"><a href="http://www.aitg.cn/" target="_blank"><img src="http://ah.people.com.cn/NMediaFile/2017/1122/LOCAL201711221751096106080243738.jpg" width="230" height="140" alt="国贸集团"/></a><a href="http://www.aitg.cn/" target="_blank">国贸集团</a></li>
+    <li class="swiper-slide"><a href="http://www.ahhqjt.cn/" target="_blank"><img src="http://ah.people.com.cn/NMediaFile/2017/1207/LOCAL201712071651118983388625804.jpg" width="230" height="140" alt="省华强集团"/></a><a href="http://www.ahhqjt.cn/" target="_blank">省华强集团</a></li>
+    <li class="swiper-slide"><a href="http://www.hhjt.com/" target="_blank"><img src="http://ah.people.com.cn/NMediaFile/2017/1122/LOCAL201711221758527495109342165.jpg" width="230" height="140" alt="淮海集团"/></a><a href="http://www.hhjt.com/" target="_blank">淮海集团</a></li>
+  </ul>
+</div>
+</template>
+
+<script>
+  module.exports = {
+    created: function () {
+      new Swiper(this.$el, {
+        "loop": true,
+        "autoplay": 3000,
+        "slidesPerView": 4
+      })
+    },
+    data: {
+      swiper: null
+    }
+  }
+</script>
+
+<style lang="less">
+  .swiper-container {
+    width: 1030px;
+    margin: 0 -15px;
+  }
+  .swiper-container, ul {
+    overflow: hidden;
+    height: 166px;
+  }
+  li {
+    display: inline-block;
+    height: 166px;
+    text-align: center;
+    font-size: 16px;
+  }
+</style>

@@ -274,6 +274,42 @@ ul[template="a5Jkh9zomp95ftbW"] {
   padding: 0;
   margin: 20px 0;
 }
+          [font=FZDBSJT] {
+            font-family: 'FZDBSJT';
+          }
+          @font-face {
+            font-family: 'FZDBSJT';
+            src: url('../font/FZDBSJT.eot');
+            src: url('../font/FZDBSJT.eot?#iefix') format('embedded-opentype'),
+              url('../font/FZDBSJT.woff') format('woff'),
+              url('../font/FZDBSJT.ttf')  format('truetype'),
+              url('../font/FZDBSJT.svg#MicrosoftYaHei') format('svg');
+          }
+        
+          [font=FZDBSJT] {
+            font-family: 'FZDBSJT';
+          }
+          @font-face {
+            font-family: 'FZDBSJT';
+            src: url('../font/FZDBSJT.eot');
+            src: url('../font/FZDBSJT.eot?#iefix') format('embedded-opentype'),
+              url('../font/FZDBSJT.woff') format('woff'),
+              url('../font/FZDBSJT.ttf')  format('truetype'),
+              url('../font/FZDBSJT.svg#MicrosoftYaHei') format('svg');
+          }
+        
+          [font=FZDBSJT] {
+            font-family: 'FZDBSJT';
+          }
+          @font-face {
+            font-family: 'FZDBSJT';
+            src: url('../font/FZDBSJT.eot');
+            src: url('../font/FZDBSJT.eot?#iefix') format('embedded-opentype'),
+              url('../font/FZDBSJT.woff') format('woff'),
+              url('../font/FZDBSJT.ttf')  format('truetype'),
+              url('../font/FZDBSJT.svg#MicrosoftYaHei') format('svg');
+          }
+        
 .right-item[template="6PJczu"] {
   width: 320px;
   height: 110px;
@@ -308,9 +344,9 @@ ul[template="a5Jkh9zomp95ftbW"] {
   padding: 0;
 }
 .show {
-  height: 50px;
+  height: 55px;
   text-align: center;
-  line-height: 50px;
+  line-height: 55px;
   color: white;
   cursor: pointer;
   overflow: hidden;
@@ -330,6 +366,70 @@ ul[template="a5Jkh9zomp95ftbW"] {
   color: white;
   text-decoration: none;
 }
+          [font=FZDBSJT] {
+            font-family: 'FZDBSJT';
+          }
+          @font-face {
+            font-family: 'FZDBSJT';
+            src: url('../font/FZDBSJT.eot');
+            src: url('../font/FZDBSJT.eot?#iefix') format('embedded-opentype'),
+              url('../font/FZDBSJT.woff') format('woff'),
+              url('../font/FZDBSJT.ttf')  format('truetype'),
+              url('../font/FZDBSJT.svg#MicrosoftYaHei') format('svg');
+          }
+        
+          [font=FZDBSJT] {
+            font-family: 'FZDBSJT';
+          }
+          @font-face {
+            font-family: 'FZDBSJT';
+            src: url('../font/FZDBSJT.eot');
+            src: url('../font/FZDBSJT.eot?#iefix') format('embedded-opentype'),
+              url('../font/FZDBSJT.woff') format('woff'),
+              url('../font/FZDBSJT.ttf')  format('truetype'),
+              url('../font/FZDBSJT.svg#MicrosoftYaHei') format('svg');
+          }
+        
+.show[template="show-2"] {
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  color: white;
+  cursor: pointer;
+  overflow: hidden;
+  display: block;
+}
+
+[template="show-2"] a,
+[template="show-2"] img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-decoration: none;
+}
+
+[template="show-2"] a:hover {
+  color: white;
+  text-decoration: none;
+}
+.swiper-container[template="paperList"] {
+  width: 1030px;
+  margin: 0 -15px;
+}
+
+[template="paperList"] .swiper-container,
+[template="paperList"] ul {
+  overflow: hidden;
+  height: 166px;
+}
+
+[template="paperList"] li {
+  display: inline-block;
+  height: 166px;
+  text-align: center;
+  font-size: 16px;
+}
 [template="home"] .w1000 {
   width: 1000px;
   margin: 0 auto;
@@ -343,13 +443,45 @@ ul[template="a5Jkh9zomp95ftbW"] {
   width: 320px;
 }
 
+[template="home"] .top-news-box .right .show {
+  margin-bottom: 38px;
+}
+
+[template="home"] .top-news-box .right h2 {
+  margin-bottom: 15px;
+}
+
+[template="home"] .top-news-box .right .notice li {
+  font-size: 16px;
+  line-height: 32px;
+}
+
+[template="home"] .top-news-box .right .news-card {
+  margin-bottom: 20px;
+}
+
 [template="home"] .news-card .title {
   font-size: 26px;
   line-height: 50px;
   color: #cc0000;
+  font-weight: normal;
+  position: relative;
+}
+
+[template="home"] .news-card .title span {
+  border-bottom: 3px solid #ece7eb;
+}
+
+[template="home"] .news-card .title img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 10px;
+  margin: auto;
 }
 
 [template="home"] .news-card {
+  float: left;
   width: 310px;
   padding-right: 20px;
 }

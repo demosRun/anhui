@@ -8,9 +8,9 @@
 
 <style>
 .show {
-  height: 30px;
+  height: 80px;
   text-align: center;
-  line-height: 30px;
+  line-height: 80px;
   color: white;
   cursor: pointer;
   overflow: hidden;

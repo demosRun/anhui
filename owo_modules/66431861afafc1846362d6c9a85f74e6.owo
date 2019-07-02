@@ -1,16 +1,16 @@
 <template>
   <div class="show">
     <a target="_blank" href="#">
-      <img src="http://world.people.com.cn/NMediaFile/2019/0520/MAIN201905201936552622484187671.png"/>
+      <img width="55" height="55" src="http://world.people.com.cn/NMediaFile/2019/0520/MAIN201905201936552622484187671.png"/>
     </a>
   </div>
 </template>
 
 <style>
 .show {
-  height: 50px;
+  height: 55px;
   text-align: center;
-  line-height: 50px;
+  line-height: 55px;
   color: white;
   cursor: pointer;
   overflow: hidden;

@@ -1,4 +1,4 @@
-// Tue Jul 02 2019 16:58:37 GMT+0800 (GMT+08:00)
+// Wed Jul 03 2019 00:25:41 GMT+0800 (GMT+08:00)
 
 "use strict";
 
@@ -110,6 +110,19 @@ owo.script = {
           }]
         },
         "prop": {}
+      },
+      "paperList": {
+        "created": function created() {
+          new Swiper(this.$el, {
+            "loop": true,
+            "autoplay": 3000,
+            "slidesPerView": 4
+          });
+        },
+        "data": {
+          "swiper": null
+        },
+        "prop": {}
       }
     }
   },
@@ -121,7 +134,8 @@ owo.script = {
   "mainText": {},
   "imageCard": {},
   "6PJczu": {},
-  "show": {}
+  "show": {},
+  "show-2": {}
 };
 
 "use strict";
@@ -238,7 +252,6 @@ _owo.handlePage = function (pageName, entryDom) {
 
 
 _owo.handleEvent = function (tempDom, templateName, entryDom) {
-  // console.log(templateName)
   var activePage = window.owo.script[owo.activePage];
 
   if (tempDom.attributes) {
@@ -269,22 +282,20 @@ _owo.handleEvent = function (tempDom, templateName, entryDom) {
             {
               // 处理事件 使用bind防止闭包
               tempDom["on" + eventName] = function (event) {
-                // 因为后面会对eventFor进行修改所以使用拷贝的
-                var eventForCopy = this; // 判断页面是否有自己的方法
-
+                // 判断页面是否有自己的方法
                 var newPageFunction = window.owo.script[window.owo.activePage]; // console.log(this.attributes)
 
-                if (templateName) {
+                if (this.templateName !== owo.activePage) {
                   // 如果模板注册到newPageFunction中，那么证明模板没有script那么直接使用eval执行
                   if (newPageFunction.template) {
-                    newPageFunction = newPageFunction.template[templateName];
+                    newPageFunction = newPageFunction.template[this.templateName];
                   }
                 } // 待优化可以单独提出来
                 // 取出参数
 
 
                 var parameterArr = [];
-                var parameterList = eventForCopy.match(/[^\(\)]+(?=\))/g);
+                var parameterList = this.eventFor.match(/[^\(\)]+(?=\))/g);
 
                 if (parameterList && parameterList.length > 0) {
                   // 参数列表
@@ -304,26 +315,29 @@ _owo.handleEvent = function (tempDom, templateName, entryDom) {
 
                   }
 
-                  eventForCopy = eventForCopy.replace('(' + parameterList + ')', '');
+                  this.eventFor = this.eventFor.replace('(' + parameterList + ')', '');
                 } else {
                   // 解决 @click="xxx()"会造成的问题
-                  eventForCopy = eventForCopy.replace('()', '');
+                  this.eventFor = this.eventFor.replace('()', '');
                 } // console.log(newPageFunction)
                 // 如果有方法,则运行它
 
 
-                if (newPageFunction[eventForCopy]) {
+                if (newPageFunction[this.eventFor]) {
                   // 绑定window.owo对象
                   // console.log(tempDom)
                   // 待测试不知道这样合并会不会对其它地方造成影响
                   newPageFunction.$el = entryDom;
                   newPageFunction.$event = event;
-                  newPageFunction[eventForCopy].apply(newPageFunction, parameterArr);
+                  newPageFunction[this.eventFor].apply(newPageFunction, parameterArr);
                 } else {
                   // 如果没有此方法则交给浏览器引擎尝试运行
-                  eval(eventForCopy);
+                  eval(this.eventFor);
                 }
-              }.bind(eventFor);
+              }.bind({
+                eventFor: eventFor,
+                templateName: templateName
+              });
             }
         }
       }
@@ -331,24 +345,20 @@ _owo.handleEvent = function (tempDom, templateName, entryDom) {
   }
 
   if (tempDom.children) {
+    // console.log(childrenDom)
     // 递归处理所有子Dom结点
     for (var i = 0; i < tempDom.children.length; i++) {
-      var childrenDom = tempDom.children[i]; // console.log(childrenDom)
+      var childrenDom = tempDom.children[i]; // 每个子节点均要判断是否为模块
 
       var newTemplateName = templateName;
 
-      if (tempDom.attributes['template'] && tempDom.attributes['template'].textContent) {
-        newTemplateName = tempDom.attributes['template'].textContent;
-      } // 待修复，逻辑太混乱了
-
-
-      var _temp = tempDom.attributes['template'] ? tempDom : entryDom;
-
-      if (newTemplateName === owo.entry) {
-        _owo.handleEvent(childrenDom, null, _temp);
-      } else {
-        _owo.handleEvent(childrenDom, newTemplateName, _temp);
+      if (childrenDom.attributes['template'] && childrenDom.attributes['template'].textContent) {
+        newTemplateName = childrenDom.attributes['template'].textContent;
       }
+
+      var _temp = childrenDom.attributes['template'] ? tempDom : entryDom;
+
+      _owo.handleEvent(childrenDom, newTemplateName, _temp);
     }
   } else {
     console.info('元素不存在子节点!');

@@ -11,9 +11,25 @@
       <div class="left fl">
         <temple name="44V6SpMv"  src="https://owo.ink/public/fe3afe4a52465b395bc7c9b9234e0611.page"></temple>
         <!-- 新闻列表 -->
-        <div class="news-box">
+        <div class="news-box clear">
+          <!-- 新闻卡片 -->
           <div class="news-card">
             <h2 class="title" font="FZDBSJT">国资动态</h2>
+            <temple name="imageCard" src="./src/module/imageCard.owo"></temple>
+            <temple name="a5Jkh9zomp95ftbW"  src="https://owo.ink/public/9d65b02ceaf5c7938c4c0a5531777e93.page"></temple>
+          </div>
+          <div class="news-card">
+            <h2 class="title" font="FZDBSJT">企业党建</h2>
+            <temple name="imageCard" src="./src/module/imageCard.owo"></temple>
+            <temple name="a5Jkh9zomp95ftbW"  src="https://owo.ink/public/9d65b02ceaf5c7938c4c0a5531777e93.page"></temple>
+          </div>
+          <div class="news-card">
+            <h2 class="title" font="FZDBSJT">理论学习</h2>
+            <temple name="imageCard" src="./src/module/imageCard.owo"></temple>
+            <temple name="a5Jkh9zomp95ftbW"  src="https://owo.ink/public/9d65b02ceaf5c7938c4c0a5531777e93.page"></temple>
+          </div>
+          <div class="news-card">
+            <h2 class="title" font="FZDBSJT">廉政教育</h2>
             <temple name="imageCard" src="./src/module/imageCard.owo"></temple>
             <temple name="a5Jkh9zomp95ftbW"  src="https://owo.ink/public/9d65b02ceaf5c7938c4c0a5531777e93.page"></temple>
           </div>
@@ -24,8 +40,27 @@
         <temple name="6PJczu" src="https://owo.ink/public/e5706a2084f544bbfa09ab064cd824dc.page"></temple>
         <temple name="6PJczu" src="https://owo.ink/public/e5706a2084f544bbfa09ab064cd824dc.page"></temple>
         <temple name="show"  src="https://owo.ink/public/b4bfd67bdf21b5e539c94a4d2abc3a17.page"></temple>
+        <div class="news-card">
+          <h2 class="title" font="FZDBSJT"><span>公告公示</span><img width="117" height="24" src="@&logo.png&"/></h2>
+          <ul class="notice">
+            <li>拟推“全国模范退役军人”候选对象的公示</li>
+            <li>省国资委法律中介机构备选库增选名单公示</li>
+            <li>职工职业道德建设标兵单位候选对象公示</li>
+            <li>关于进一步做好央企合作项目的通知</li>
+            <li>职工职业道德建设标兵单位候选对象公示</li>
+          </ul>
+        </div>
+        <div class="news-card">
+          <h2 class="title" font="FZDBSJT"><span>视频新闻</span></h2>
+          <embed name="_vPlayer" src="http://tvplayer.people.com.cn/vPlayer.php/pid/20190509_3380_drzn_apcv/vblogPlayerV4.swf" quality="high" width="310" height="220" align="middle" allowScriptAccess="always" allowFullScreen="true" type="application/x-shockwave-flash"></embed>
+          <temple name="a5Jkh9zomp95ftbW"  src="https://owo.ink/public/9d65b02ceaf5c7938c4c0a5531777e93.page"></temple>
+        </div>
       </div>
     </div>
+    <!-- 广告 -->
+    <temple name="show-2"  src="https://owo.ink/public/b2de978de400a7aa558f1c202b730416.page"></temple>
+    <!-- 列表展示 -->
+    <temple name="paperList"  src="./src/module/paperList.owo"></temple>
   </div>
 </div>
 </template>
@@ -44,6 +79,21 @@
   
   .right {
     width: 320px;
+    .show {
+      margin-bottom: 38px;
+    }
+    h2 {
+      margin-bottom: 15px;
+    }
+    .notice {
+      li {
+        font-size: 16px;
+        line-height: 32px;
+      }
+    }
+    .news-card {
+      margin-bottom: 20px;
+    }
   }
 }
 .news-card {
@@ -51,10 +101,24 @@
     font-size: 26px;
     line-height: 50px;
     color: #cc0000;
+    font-weight: normal;
+    position: relative;
+    span {
+      border-bottom: 3px solid #ece7eb;
+    }
+    img {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 10px;
+      margin: auto;
+    }
   }
 }
 .news-card {
+  float: left;
   width: 310px;
   padding-right: 20px;
 }
+
 </style>

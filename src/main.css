@@ -77,7 +77,7 @@ nav[template="nav"] {
 }
 
 .right-item[template="6PJczu"] {
-  border-bottom: 2px solid #ccc;
+  border-bottom: 1px solid #f0f0f0;
 }
 
 .right-item:nth-last-child(2) {
@@ -94,4 +94,12 @@ nav[template="nav"] {
 
 .swiper-container-p2[template="44V6SpMv"] {
   margin-bottom: 40px;
+}
+
+.show[template="show-2"] {
+  margin-bottom: 40px;
+}
+
+.swiper-container[template="paperList"] {
+  margin-bottom: 50px;
 }
