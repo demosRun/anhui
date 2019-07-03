@@ -1,4 +1,4 @@
-// Wed Jul 03 2019 00:36:11 GMT+0800 (GMT+08:00)
+// Wed Jul 03 2019 10:27:44 GMT+0800 (GMT+08:00)
 
 "use strict";
 
@@ -6,59 +6,18 @@
 var owo = {
   // 页面默认入口
   entry: "home",
-  // 全局方法变量
-  tool: {},
-  // 框架状态变量
+  // 全局状态变量
   state: {}
 };
+
 /*
   存储每个页面的函数
   键名：页面名称
   键值：方法列表
 */
-
 owo.script = {
   "home": {
     "template": {
-      "nav": {
-        "data": {
-          "itemLiat": [{
-            "url": "http://www.people.com.cn/",
-            "name": "首页"
-          }, {
-            "url": "http://www.people.com.cn/",
-            "name": "要闻"
-          }, {
-            "url": "http://www.people.com.cn/",
-            "name": "国资动态"
-          }, {
-            "url": "http://www.people.com.cn/",
-            "name": "企业党建"
-          }, {
-            "url": "http://www.people.com.cn/",
-            "name": "公示公告"
-          }, {
-            "url": "http://www.people.com.cn/",
-            "name": "视频新闻"
-          }, {
-            "url": "http://www.people.com.cn/",
-            "name": "理论学习"
-          }, {
-            "url": "http://www.people.com.cn/",
-            "name": "廉政教育"
-          }, {
-            "url": "http://www.people.com.cn/",
-            "name": "基层传真"
-          }, {
-            "url": "http://www.people.com.cn/",
-            "name": "党史纵览"
-          }, {
-            "url": "http://www.people.com.cn/",
-            "name": "图说党建"
-          }]
-        },
-        "prop": {}
-      },
       "44V6SpMv": {
         "data": {
           "swiper": null
@@ -90,26 +49,7 @@ owo.script = {
         },
         "next": function next() {
           this.data.swiper.swipeNext();
-        },
-        "prop": {}
-      },
-      "a5Jkh9zomp95ftbW": {
-        "data": {
-          "itemLiat": [{
-            "name": "雅加达，别说再见",
-            "url": "http://www.people.com.cn/",
-            "time": "2018-09-03 13:38"
-          }, {
-            "name": "雅加达亚运夺金练兵兼顾 中国军团提速迈向东京奥运雅加达亚运夺金练兵兼顾 中国军团提速迈向东京奥运雅加达亚运夺金练兵兼顾 中国军团提速迈向东京奥运",
-            "url": "http://www.people.com.cn/",
-            "time": "2018-09-03 13:38"
-          }, {
-            "name": "高清：2018年雅加达亚运会 闭幕式盛况",
-            "url": "http://www.people.com.cn/",
-            "time": "2018-09-03 13:38"
-          }]
-        },
-        "prop": {}
+        }
       },
       "paperList": {
         "created": function created() {
@@ -118,27 +58,18 @@ owo.script = {
             "autoplay": 3000,
             "slidesPerView": 4
           });
-        },
-        "data": {
-          "swiper": null
-        },
-        "prop": {}
+        }
+      },
+      "linkBar": {
+        "change": function change(params) {
+          var target = this.$event.target; // 新窗口打开页面
+
+          window.open(target.options[target.selectedIndex].getAttribute('src'));
+        }
       }
     }
-  },
-  "topBar": {
-    "prop": {
-      "logo": "http://www.people.com.cn/img/2016people/images/rmw_logo.png"
-    }
-  },
-  "mainText": {},
-  "imageCard": {},
-  "6PJczu": {},
-  "show": {},
-  "show-2": {}
+  }
 };
-
-"use strict";
 
 /* 方法合集 */
 var _owo = {
@@ -440,40 +371,8 @@ _owo.whenReady = function () {
       funcs.push(fn);
     }
   };
-}(); // 执行页面加载完毕方法
+}();
 
 
+// 执行页面加载完毕方法
 _owo.whenReady(_owo.ready);
-
-function switchPage(oldUrlParam, newUrlParam) {
-  var oldPage = oldUrlParam.split('&')[0];
-  var newPage = newUrlParam.split('&')[0]; // 查找页面跳转前的page页(dom节点)
-  // console.log(oldUrlParam)
-  // 如果源地址获取不到 那么一般是因为源页面为首页
-
-  if (oldPage === undefined) {
-    oldPage = owo.entry;
-  }
-
-  var oldDom = document.getElementById('o-' + oldPage);
-
-  if (oldDom) {
-    // 隐藏掉旧的节点
-    oldDom.style.display = 'none';
-  } // 查找页面跳转后的page
-
-
-  var newDom = document.getElementById('o-' + newPage); // console.log(newDom)
-
-  if (newDom) {
-    // 隐藏掉旧的节点
-    newDom.style.display = 'block';
-  } else {
-    console.error('页面不存在!');
-    return;
-  }
-
-  window.owo.activePage = newPage;
-
-  _owo.handlePage(newPage, newDom);
-}

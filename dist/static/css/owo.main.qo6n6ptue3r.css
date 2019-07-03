@@ -186,19 +186,8 @@ h1[template="mainText"] {
   margin-right: 1px;
   margin-left: 0;
 }
-          [font=FZDBSJT] {
-            font-family: 'FZDBSJT';
-          }
-          @font-face {
-            font-family: 'FZDBSJT';
-            src: url('../font/FZDBSJT.eot');
-            src: url('../font/FZDBSJT.eot?#iefix') format('embedded-opentype'),
-              url('../font/FZDBSJT.woff') format('woff'),
-              url('../font/FZDBSJT.ttf')  format('truetype'),
-              url('../font/FZDBSJT.svg#MicrosoftYaHei') format('svg');
-          }
-        
 [template="imageCard"] .image-box {
+  overflow: hidden;
   width: 310px;
   height: 150px;
   position: relative;
@@ -274,42 +263,6 @@ ul[template="a5Jkh9zomp95ftbW"] {
   padding: 0;
   margin: 20px 0;
 }
-          [font=FZDBSJT] {
-            font-family: 'FZDBSJT';
-          }
-          @font-face {
-            font-family: 'FZDBSJT';
-            src: url('../font/FZDBSJT.eot');
-            src: url('../font/FZDBSJT.eot?#iefix') format('embedded-opentype'),
-              url('../font/FZDBSJT.woff') format('woff'),
-              url('../font/FZDBSJT.ttf')  format('truetype'),
-              url('../font/FZDBSJT.svg#MicrosoftYaHei') format('svg');
-          }
-        
-          [font=FZDBSJT] {
-            font-family: 'FZDBSJT';
-          }
-          @font-face {
-            font-family: 'FZDBSJT';
-            src: url('../font/FZDBSJT.eot');
-            src: url('../font/FZDBSJT.eot?#iefix') format('embedded-opentype'),
-              url('../font/FZDBSJT.woff') format('woff'),
-              url('../font/FZDBSJT.ttf')  format('truetype'),
-              url('../font/FZDBSJT.svg#MicrosoftYaHei') format('svg');
-          }
-        
-          [font=FZDBSJT] {
-            font-family: 'FZDBSJT';
-          }
-          @font-face {
-            font-family: 'FZDBSJT';
-            src: url('../font/FZDBSJT.eot');
-            src: url('../font/FZDBSJT.eot?#iefix') format('embedded-opentype'),
-              url('../font/FZDBSJT.woff') format('woff'),
-              url('../font/FZDBSJT.ttf')  format('truetype'),
-              url('../font/FZDBSJT.svg#MicrosoftYaHei') format('svg');
-          }
-        
 .right-item[template="6PJczu"] {
   width: 320px;
   height: 110px;
@@ -334,14 +287,19 @@ ul[template="a5Jkh9zomp95ftbW"] {
   text-decoration: none;
 }
 
-[template="6PJczu"] .text {
+[template="6PJczu"] li,
+[template="6PJczu"] li a {
   font-size: 16px;
   color: #595757;
   line-height: 32px;
-  height: 70px;
   overflow: hidden;
   margin: 0;
   padding: 0;
+}
+
+[template="6PJczu"] a:hover {
+  color: #c00;
+  text-decoration: underline;
 }
 .show {
   height: 55px;
@@ -366,30 +324,6 @@ ul[template="a5Jkh9zomp95ftbW"] {
   color: white;
   text-decoration: none;
 }
-          [font=FZDBSJT] {
-            font-family: 'FZDBSJT';
-          }
-          @font-face {
-            font-family: 'FZDBSJT';
-            src: url('../font/FZDBSJT.eot');
-            src: url('../font/FZDBSJT.eot?#iefix') format('embedded-opentype'),
-              url('../font/FZDBSJT.woff') format('woff'),
-              url('../font/FZDBSJT.ttf')  format('truetype'),
-              url('../font/FZDBSJT.svg#MicrosoftYaHei') format('svg');
-          }
-        
-          [font=FZDBSJT] {
-            font-family: 'FZDBSJT';
-          }
-          @font-face {
-            font-family: 'FZDBSJT';
-            src: url('../font/FZDBSJT.eot');
-            src: url('../font/FZDBSJT.eot?#iefix') format('embedded-opentype'),
-              url('../font/FZDBSJT.woff') format('woff'),
-              url('../font/FZDBSJT.ttf')  format('truetype'),
-              url('../font/FZDBSJT.svg#MicrosoftYaHei') format('svg');
-          }
-        
 .show[template="show-2"] {
   height: 80px;
   text-align: center;
@@ -441,6 +375,146 @@ ul[template="a5Jkh9zomp95ftbW"] {
   margin: 0;
   padding: 0;
 }
+ul[template="a5Jkh9zomp95ftbW1"] {
+  padding: 0;
+  margin: 0;
+}
+
+[template="a5Jkh9zomp95ftbW1"] li {
+  color: #595757;
+  line-height: 38px;
+  font-size: 16px;
+  position: relative;
+  cursor: pointer;
+}
+
+[template="a5Jkh9zomp95ftbW1"] li a {
+  color: black;
+  text-decoration: none;
+}
+
+[template="a5Jkh9zomp95ftbW1"] li a:hover {
+  color: #c00;
+  text-decoration: underline;
+}
+
+[template="a5Jkh9zomp95ftbW1"] li .time {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  font-size: 13px;
+  clear: both;
+}
+
+[template="a5Jkh9zomp95ftbW1"] li {
+  overflow: hidden;
+  height: 38px;
+  background-repeat: no-repeat;
+  background-position: 5px center;
+  padding-left: 15px;
+  background-image: url('http://opinion.people.com.cn/img/MAIN/2014/06/114590/images/dot.gif');
+}
+
+[template="a5Jkh9zomp95ftbW1"] a {
+  height: 36px;
+  overflow: hidden;
+  display: block;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+ul[template="a5Jkh9zomp95ftbW1"] {
+  padding: 0;
+}
+.info-image[template="infoImg"] {
+  overflow: hidden;
+  position: relative;
+  width: 350px;
+  height: 210px;
+}
+
+.info-image[template="infoImg"]:hover p {
+  bottom: 0px;
+}
+
+[template="infoImg"] p {
+  position: absolute;
+  bottom: -30px;
+  background-color: rgba(0, 0, 0, 0.7);
+  line-height: 30px;
+  width: 98%;
+  color: white;
+  padding: 0 1%;
+  margin: 0;
+  overflow: hidden;
+  height: 30px;
+  transition: bottom 0.6s;
+}
+
+[template="infoImg"] a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.info-image[template="infoImg2"] {
+  overflow: hidden;
+  position: relative;
+  width: 155px;
+  height: 100px;
+}
+
+.info-image[template="infoImg2"]:hover p {
+  bottom: 0px;
+}
+
+[template="infoImg2"] p {
+  position: absolute;
+  bottom: -20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-size: 12px;
+  line-height: 20px;
+  width: 98%;
+  color: white;
+  padding: 0 1%;
+  margin: 0;
+  transition: bottom 0.6s;
+}
+
+[template="infoImg2"] a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+[template="linkBar"] img {
+  float: left;
+}
+
+.link-bar[template="linkBar"] {
+  height: 32px;
+  background-color: #e1e1e1;
+}
+
+[template="linkBar"] select {
+  height: 25px;
+  float: left;
+  margin: 3px 5px;
+  width: 216px;
+}
+footer[template="copyright"] {
+  color: #ffffff;
+  font-size: 12px;
+  position: relative;
+  background-color: #e32f1e;
+  padding: 40px;
+}
+
+[template="copyright"] p {
+  margin: 12px 0;
+  width: 100%;
+  display: inline-block;
+  line-height: 20px;
+  text-align: center;
+}
 [template="home"] .w1000 {
   width: 1000px;
   margin: 0 auto;
@@ -465,25 +539,38 @@ ul[template="a5Jkh9zomp95ftbW"] {
 [template="home"] .top-news-box .right .notice li {
   font-size: 16px;
   line-height: 32px;
+  width: 320px;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 [template="home"] .top-news-box .right .news-card {
   margin-bottom: 20px;
 }
 
-[template="home"] .news-card .title {
+[template="home"] h2.title {
   font-size: 26px;
   line-height: 50px;
   color: #cc0000;
   font-weight: normal;
   position: relative;
+  font-family: 'Microsoft YaHei';
+}
+[template="home"] h2.title a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+[template="home"] h2.title a:hover {
+  color: #c00;
+  text-decoration: underline;
 }
 
-[template="home"] .news-card .title span {
+[template="home"] h2.title span {
   border-bottom: 3px solid #ece7eb;
 }
 
-[template="home"] .news-card .title img {
+[template="home"] h2.title img {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -495,4 +582,168 @@ ul[template="a5Jkh9zomp95ftbW"] {
   float: left;
   width: 310px;
   padding-right: 20px;
+}
+
+[template="home"] .bottom-news {
+  margin-bottom: 20px;
+}
+
+[template="home"] .bottom-news .left {
+  width: 300px;
+  margin-right: 20px;
+}
+
+[template="home"] .bottom-news h3 {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+[template="home"] .bottom-news h3 a:hover, [template="home"] .top-news-box .right .notice li a:hover {
+  color: #c00;
+  text-decoration: underline;
+}
+
+[template="home"] .bottom-news ul {
+  margin: 0;
+  padding: 0;
+}
+
+[template="home"] .bottom-news .img-box {
+  height: 210px;
+  width: 100%;
+}
+
+[template="home"] .bottom-news .right {
+  width: 680px;
+  height: 260px;
+  overflow: hidden;
+}
+
+[template="home"] .bottom-news .right .main-img {
+  float: left;
+}
+
+[template="home"] .bottom-news .img-right .info-image {
+  float: left;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+
+/* 这个文件里写的是全局样式,在各个页面都生效 */
+body, html {
+  margin: 0;
+  padding: 0;
+  user-select: text;
+  font: normal 12px/180% "SimSun";
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+  overflow-x: hidden;
+  min-height: 100%;
+}
+body {
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center top;
+  min-width: 1100px;
+  background-image: url('../resource/bg.jpg');
+}
+h1, h2, h3, h4, h5, input {
+  margin: 0;
+  padding: 0;
+}
+.fl {
+  float: left;
+}
+ul, li {
+  list-style-type: none;
+}
+
+a {
+  color: unset;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, button, input, textarea, th, td{
+  margin:0;
+  padding:0;
+}
+
+.clear:after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+
+/* 网页常用样式 */
+
+nav[template="nav"] {
+  font-size: 16px;
+  background-color: #ce262a;
+}
+
+.nav-box {
+  margin: 0 auto;
+  font-weight: bold;
+  margin-top: 22%;
+  background-color: #ce262a;
+}
+
+
+.content {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.swiper-container-p2[template="44V6SpMv"] {
+  margin: 0;
+}
+
+.right-item[template="6PJczu"] {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.right-item:nth-last-child(2) {
+  border: none;
+}
+
+.right-item[template="6PJczu"] {
+  height: 103px;
+}
+
+.show[template="ad"] {
+  border: 1px solid #ccc;
+}
+
+.swiper-container-p2[template="44V6SpMv"] {
+  margin-bottom: 40px;
+}
+
+.show[template="show-2"] {
+  margin-bottom: 40px;
+}
+
+.swiper-container[template="paperList"] {
+  margin-bottom: 50px;
+}
+
+.link-bar[template="linkBar"] {
+  margin-bottom: 50px;
+}
+
+h1[template="mainText"] {
+  margin: 20px 0;
+}
+
+nav[template="nav"] a:hover {
+  text-decoration: underline;
 }

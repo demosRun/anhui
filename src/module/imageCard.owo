@@ -11,6 +11,7 @@
 
 <style lang="less">
 .image-box {
+  overflow: hidden;
   width: 310px;
   height: 150px;
   position: relative;

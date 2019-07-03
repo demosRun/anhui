@@ -1,9 +1,12 @@
 <template>
   <div class="right-item">
     <h1 class="title">
-      <a target="_blank" href="http://www.people.com.cn/">5月份全省规上工业增加值增长7% </a>
+      <a target="_blank" href="#">5月份全省规上工业增加值增长7% </a>
     </h1>
-    <p class="text">埃梅里比温格强？阿森纳积分已超上赛季却还争利物浦将夺冠奥巴梅扬终结客场球荒冲击金靴 门神：他太快了冲击金靴</p>
+    <ul>
+      <li><a target="_blank" href="#">信息快递：为新时代经济高质量发展服务</a></li>
+      <li><a target="_blank" href="#">坚持以人民为中心不忘党的初心和使命</a></li>
+    </ul>
   </div>
 </template>
 
@@ -28,13 +31,16 @@
       text-decoration: none;
     }
   }
-  .text {
+  li, li a {
     font-size: 16px;
     color: #595757;
     line-height: 32px;
-    height: 70px;
     overflow: hidden;
     margin: 0;
     padding: 0;
+  }
+  a:hover {
+    color: #c00;
+    text-decoration: underline;
   }
 </style>

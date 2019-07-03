@@ -1,0 +1,63 @@
+<template>
+  <div class="link-bar clear">
+    <img src="http://ah.people.com.cn/img/LOCAL/2017/11/113099/images/icon2.png" width="95" height="32" />
+    <select @change="change">
+      <option selected disabled >国家及部委网站</option>
+      <option src="#">中国政府网</option>
+      <option src="#">中国政府网</option>
+      <option src="#">中国政府网</option>
+      <option src="#">中国政府网</option>
+      <option src="#">中国政府网</option>
+    <select>
+    <select @change="change">
+      <option selected disabled >省级网站</option>
+      <option src="#">中国政府网</option>
+      <option src="#">中国政府网</option>
+      <option src="#">中国政府网</option>
+      <option src="#">中国政府网</option>
+      <option src="#">中国政府网</option>
+    <select>
+    <select @change="change">
+      <option selected disabled >市级国资委网站</option>
+      <option src="#">中国政府网</option>
+      <option src="#">中国政府网</option>
+      <option src="#">中国政府网</option>
+      <option src="#">中国政府网</option>
+      <option src="#">中国政府网</option>
+    <select>
+    <select @change="change">
+      <option selected disabled >市级政府网站</option>
+      <option src="#">中国政府网</option>
+      <option src="#">中国政府网</option>
+      <option src="#">中国政府网</option>
+      <option src="#">中国政府网</option>
+      <option src="#">中国政府网</option>
+    <select>
+  </div>
+</template>
+
+<script>
+  module.exports = {
+    change: function (params) {
+      const target = this.$event.target
+      // 新窗口打开页面
+      window.open(target.options[target.selectedIndex].getAttribute('src'))
+    }
+  }
+</script>
+
+<style>
+img {
+  float: left;
+}
+.link-bar {
+  height: 32px;
+  background-color: #e1e1e1;
+}
+select {
+  height: 25px;
+  float: left;
+  margin: 3px 5px;
+  width: 216px;
+}
+</style>

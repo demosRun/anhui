@@ -1,0 +1,25 @@
+<template>
+  <div class="info-image">
+    <img width="350" height="210" src="http://www.people.com.cn/NMediaFile/2019/0702/MAIN201907020859245334964082297.jpg"/>
+    <p><a target="_blank" href="#">访谈主题</a></p>
+  </div>
+</template>
+
+<style>
+.info-image {
+  position: relative;
+  width: 350px;
+  height: 210px;
+}
+p {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  line-height: 30px;
+  width: 98%;
+  color: white;
+  padding: 0 1%;
+  color: white;
+  margin: 0;
+}
+</style>

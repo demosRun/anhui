@@ -17,7 +17,7 @@ module.exports = {
     },
     {
       name: 'viewport',
-      content: 'width=1200, user-scalable=yes,shrink-to-fit=no',
+      content: 'width=1100, user-scalable=yes,shrink-to-fit=no',
     },
     {
       name: 'format-detection',

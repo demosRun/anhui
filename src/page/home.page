@@ -14,22 +14,22 @@
         <div class="news-box clear">
           <!-- 新闻卡片 -->
           <div class="news-card">
-            <h2 class="title" font="FZDBSJT">国资动态</h2>
+            <h2 class="title">国资动态</h2>
             <temple name="imageCard" src="./src/module/imageCard.owo"></temple>
             <temple name="a5Jkh9zomp95ftbW"  src="https://owo.ink/public/9d65b02ceaf5c7938c4c0a5531777e93.page"></temple>
           </div>
           <div class="news-card">
-            <h2 class="title" font="FZDBSJT">企业党建</h2>
+            <h2 class="title">企业党建</h2>
             <temple name="imageCard" src="./src/module/imageCard.owo"></temple>
             <temple name="a5Jkh9zomp95ftbW"  src="https://owo.ink/public/9d65b02ceaf5c7938c4c0a5531777e93.page"></temple>
           </div>
           <div class="news-card">
-            <h2 class="title" font="FZDBSJT">理论学习</h2>
+            <h2 class="title">理论学习</h2>
             <temple name="imageCard" src="./src/module/imageCard.owo"></temple>
             <temple name="a5Jkh9zomp95ftbW"  src="https://owo.ink/public/9d65b02ceaf5c7938c4c0a5531777e93.page"></temple>
           </div>
           <div class="news-card">
-            <h2 class="title" font="FZDBSJT">廉政教育</h2>
+            <h2 class="title">廉政教育</h2>
             <temple name="imageCard" src="./src/module/imageCard.owo"></temple>
             <temple name="a5Jkh9zomp95ftbW"  src="https://owo.ink/public/9d65b02ceaf5c7938c4c0a5531777e93.page"></temple>
           </div>
@@ -41,7 +41,7 @@
         <temple name="6PJczu" src="https://owo.ink/public/e5706a2084f544bbfa09ab064cd824dc.page"></temple>
         <temple name="show"  src="https://owo.ink/public/b4bfd67bdf21b5e539c94a4d2abc3a17.page"></temple>
         <div class="news-card">
-          <h2 class="title" font="FZDBSJT"><span>公告公示</span><img width="117" height="24" src="@&logo.png&"/></h2>
+          <h2 class="title"><span>公告公示</span><img width="117" height="24" src="@&logo.png&"/></h2>
           <ul class="notice">
             <li>拟推“全国模范退役军人”候选对象的公示</li>
             <li>省国资委法律中介机构备选库增选名单公示</li>
@@ -51,7 +51,7 @@
           </ul>
         </div>
         <div class="news-card">
-          <h2 class="title" font="FZDBSJT"><span>视频新闻</span></h2>
+          <h2 class="title"><span>视频新闻</span></h2>
           <embed name="_vPlayer" src="http://tvplayer.people.com.cn/vPlayer.php/pid/20190509_3380_drzn_apcv/vblogPlayerV4.swf" quality="high" width="310" height="220" align="middle" allowScriptAccess="always" allowFullScreen="true" type="application/x-shockwave-flash"></embed>
           <temple name="a5Jkh9zomp95ftbW"  src="https://owo.ink/public/9d65b02ceaf5c7938c4c0a5531777e93.page"></temple>
         </div>
@@ -60,8 +60,31 @@
     <!-- 广告 -->
     <temple name="show-2"  src="https://owo.ink/public/b2de978de400a7aa558f1c202b730416.page"></temple>
     <!-- 列表展示 -->
+    <h2 class="title">省属企业</h2>
     <temple name="paperList"  src="./src/module/paperList.owo"></temple>
+    <!-- 底部新闻 -->
+    <div class="bottom-news clear">
+      <div class="left fl">
+        <h2 class="title">基层传真</h2>
+        <h3>5月份全省规上工业增加值增长7%</h3>
+        <temple name="a5Jkh9zomp95ftbW"  src="https://owo.ink/public/a7cc9865d6e4384c539fc5e9d5f3545a.page"></temple>
+      </div>
+      <div class="right fl">
+        <h2 class="title">图说党建</h2>
+        <div class="img-box">
+          <temple name="infoImg" class="main-img"  src="https://owo.ink/public/b8743937eb53f4168312da7b8305aee6.page"></temple>
+          <div class="img-right">
+            <temple name="infoImg2"  src="https://owo.ink/public/877b5741623c8f98ad8edf1ae30157df.page"></temple>
+            <temple name="infoImg2"  src="https://owo.ink/public/877b5741623c8f98ad8edf1ae30157df.page"></temple>
+            <temple name="infoImg2"  src="https://owo.ink/public/877b5741623c8f98ad8edf1ae30157df.page"></temple>
+            <temple name="infoImg2"  src="https://owo.ink/public/877b5741623c8f98ad8edf1ae30157df.page"></temple>
+          </div>
+        </div>
+      </div>
+    </div>
+    <temple name="linkBar"  src="./src/module/linkBar.owo"></temple>
   </div>
+  <temple name="copyright"  src="https://owo.ink/public/a11541d47ab98fd0d7084499d590f0ca.page"></temple>
 </div>
 </template>
 
@@ -96,23 +119,22 @@
     }
   }
 }
-.news-card {
-  .title {
-    font-size: 26px;
-    line-height: 50px;
-    color: #cc0000;
-    font-weight: normal;
-    position: relative;
-    span {
-      border-bottom: 3px solid #ece7eb;
-    }
-    img {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: 10px;
-      margin: auto;
-    }
+h2.title {
+  font-size: 26px;
+  line-height: 50px;
+  color: #cc0000;
+  font-weight: normal;
+  position: relative;
+  font-family: 'Microsoft YaHei';
+  span {
+    border-bottom: 3px solid #ece7eb;
+  }
+  img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 10px;
+    margin: auto;
   }
 }
 .news-card {
@@ -120,5 +142,38 @@
   width: 310px;
   padding-right: 20px;
 }
-
+.bottom-news {
+  margin-bottom: 20px;
+  .left {
+    width: 300px;
+    margin-right: 20px;
+  }
+  h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  .img-box {
+    height: 210px;
+    width: 100%;
+  }
+  .right {
+    width: 680px;
+    height: 260px;
+    overflow: hidden;
+    .main-img {
+      float: left;
+    }
+  }
+  .img-right {
+    .info-image {
+      float: left;
+      margin-bottom: 10px;
+      margin-left: 10px;
+    }
+  }
+}
 </style>
